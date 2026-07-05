@@ -1,7 +1,7 @@
 # 🔗 URL Shortener
 
 This is a web application designed to instantly transform long, unwieldy URLs into clean, shareable aliases.
-This project uses a ExpressJS - Vite - React architecture, utilizing FastAPI for a robust backend and React powered by Vite for a lightning-fast frontend. The entire ecosystem is containerized with Docker for seamless development and deployment.
+This project uses a ExpressJS - Vite - React architecture, utilizing ExpressJS for a robust backend and React powered by Vite for a lightning-fast frontend. The entire ecosystem is containerized with Docker for seamless development and deployment.
 
 ## 🛠️ Tech Stack
 
