@@ -1,0 +1,6 @@
+{
+  "exec": "kill-port 5000 && node index.js",
+  "events": {
+    "restart": "kill-port 5000"
+  }
+}

@@ -1,0 +1,27 @@
+services:
+    backend:
+      container_name: running-backend
+      image: express-backend:1.0
+      build:
+        context: ./server
+        dockerfile: Dockerfile
+      ports:
+        - "5000:5000"
+      volumes:
+        - ./server:/app
+        - /app/node_modules
+      command: npm run dev
+
+    frontend:
+      build:
+        context: ./frontend
+        dockerfile: Dockerfile  # FIX: Explicitly points to your frontend Dockerfile
+      ports:
+        - "5173:5173"        # Maps React port
+      volumes:
+        - ./frontend:/app    # Enables hot-reloading for React code changes
+        - /app/node_modules  # Safeguards container dependencies
+      stdin_open: true       # FIX: Keeps the React interactive process open
+      tty: true              # FIX: Allocates a virtual terminal to stop crashes
+      depends_on:
+        - backend
