@@ -1,0 +1,7 @@
+| Feature | FastAPI                                                                                    | Express.js                                                                                    |
+| :--- |:-------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------|
+| **Language & Syntax** | **Python:** Clean and highly readable.                                                     | **JavaScript/TypeScript:** Universal language for web development, but syntax can grow messy. |
+| **Project Management** | Managed by `pip` and `requirements.txt`.                                                   | Managed by `npm` and `package.json`.                                                          |
+| **OS Compatibility** | Setup via Homebrew and Python virtual environments.                                        | Setup via Node.js.                                                                            |
+| **Localhost & CORS Issues** | Middleware like `CORSMiddleware` handles **localhost** cross-origin browser blocking.      | Middleware like `cors` package handles **localhost** cross-origin browser blocking.           |
+| **Best Used For** | AI integration and data science pipelines.                                                 | Full-stack JavaScript apps, real-time WebSockets, and traditional REST APIs.                  |
