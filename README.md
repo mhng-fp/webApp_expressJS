@@ -38,4 +38,13 @@ git clone https://github.com/mhng-fp/webApp_expressJS.git
 *   Ensure you have [Docker Desktop](https://docker.com) installed and docker engine running.
 *   At root folder, `docker compose up --build -d`. Access `http://127.0.0.1:5000/hello` and `http://127.0.0.1:5173`.
 
+To kill:
+At root folder, `docker compose down --volumes --rmi all` `docker system prune -a --volumes --force` `docker builder prune -a --force` `docker system df`
+
 ---
+
+## 📺 Demo
+
+https://github.com/user-attachments/assets/a35bbdcd-a013-4a45-a54d-85ad48aeed67
+
+
